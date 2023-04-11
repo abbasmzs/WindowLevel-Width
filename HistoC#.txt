@@ -1,0 +1,15 @@
+img = cv2.imread('D:/ProcessImage_50Mas 80KVp 400mA 125ms table_0.tiff', -1)
+
+maxdata = img.max()
+maxdata == 55000
+
+hist = cv2.calcHist([img],[0],None,[65535],[1,maxdata ]) 
+
+max_index = hist.argmax()
+max_value = hist[max_index]
+Central == 799.0
+
+float[] myArray = new float[] { (CalHist) };
+int Width = Array.IndexOf(myArray, myArray.Max());
+float maxValue = myArray[maxIndex];
+WindowLevel = maxValue/2;
